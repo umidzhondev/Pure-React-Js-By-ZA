@@ -6,13 +6,13 @@
 body{
     font-family: "Poppins", sans-serif;
 }
-.container{
+/* .container{
     width: 72%;
     margin: 0 auto;
     min-height: 100vh;
     display: flex;
     align-items: center;
-}
+} */
 .boxs{
     width: 100%;
     display: flex;
@@ -34,11 +34,11 @@ body{
 .box__image{
     width: 300px;
 }
-.box__title{
+/* .box__title{
     font-size: 2rem;
     color: #000;
     margin-bottom: 20px;
-}
+} */
 .box__description{
     width: 90%;
     margin: 0 auto;
