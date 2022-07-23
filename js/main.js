@@ -28,7 +28,7 @@ const pokemonCard = createCardElement("Pokemons","Grass, Poison","6.9 kg","99 ag
 
 const styles = {
   container: {
-    maxWidth: "1185px",
+    maxWidth: "1285px",
     width: "100%",
     margin: "0 auto",
     paddingInline: "30px",
