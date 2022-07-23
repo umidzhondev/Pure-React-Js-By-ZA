@@ -3,58 +3,176 @@
     padding: 0;
     box-sizing: border-box;
 }
-body{
-    font-family: "Poppins", sans-serif;
+
+:root {
+    --main-bg-color: #FFD845;
 }
-/* .container{
-    width: 72%;
-    margin: 0 auto;
-    min-height: 100vh;
-    display: flex;
-    align-items: center;
-} */
-.boxs{
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    background-color: #FECA39FF;
-    padding: 90px 0;
+
+body {
+    font-family: "Rubik", sans-serif;
+    background-color: var(--main-bg-color);
+    font-size: 1.5rem;
+    font-weight: 500;
+    line-height: 120%;
 }
-.box{
+
+section,
+[class*="__content"],
+.products__header {
+    width: 100%
+}
+
+button,
+select {
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+img {
+    cursor: pointer;
+}
+
+.container {
+    position: relative;
+}
+
+.products {
+    padding: 50px 0;
+}
+
+.products__header{
+    margin-bottom: 100px;
+}
+.products__content,
+.products__header {
     display: flex;
     flex-direction: column;
     align-items: center;
-    text-align: center;
-    flex: 1;
-    padding: 0px 90px;
+    justify-content: center;
 }
-.box:first-child{
-    border-right: 1px solid rgb(77, 77, 77);
+
+.products__logo {
+    margin-bottom: 70px;
 }
-.box__image{
-    width: 300px;
+
+.products__header-icon {
+    position: absolute;
+    top: 0px;
+    right: 0;
 }
-/* .box__title{
-    font-size: 2rem;
-    color: #000;
-    margin-bottom: 20px;
-} */
-.box__description{
-    width: 90%;
-    margin: 0 auto;
-    font-size: 1rem;
-    color: rgb(53, 52, 52);
-    margin-bottom: 20px;
+
+.products__header-menu {
+    width: 100%;
+    padding: 0 97px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
 }
-.box__button{
+
+.products__select,
+.products__search-box input,
+.products__header-button {
+    font-size: 1.5rem;
     background-color: #fff;
-    border: none;
-    outline: none;
-    color: rgb(32, 32, 32);
-    font-size: 1rem;
-    font-weight: 700;
-    border-radius: 30px;
-    padding: 15px 30px;
-    text-transform: uppercase;
-    font-family: sans-serif;
+    border: 2px solid #000000;
+    border-radius: 15px;
+    font-weight: 500;
+}
+
+.products__select {
+    padding: 16px 70px;
+    padding-left: 58px;
+    appearance: none;
+    position: relative;
+    background-image: url("../images/chevron-down-icon.svg");
+    background-repeat: no-repeat;
+    background-position: 70% center;
+}
+
+.products__search-box {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.products__search-box input {
+    padding: 16px 29px;
+    position: relative;
+}
+
+.products__search-box img {
+    position: absolute;
+    right: 30px;
+}
+
+.products__header-button {
+    padding: 16px 64px;
+}
+
+.products__cards {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+    grid-gap: 30px;
+}
+
+.products__card {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    background: #FFFFFF;
+    border: 2px solid #000000;
+    border-radius: 20px;
+    padding: 30px 0;
+}
+.products__card-imgbox{
+    width: 157px;
+    height: 157px;
+    margin: 0 auto;
+    margin-bottom: 68px;
+    padding-inline: 30px;
+}
+.products__card-imgbox img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.products__card-info{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    padding-top: 20px;
+    padding-inline: 30px;
+    border-top: 2px solid #000;
+}
+.products__card-icon{
+    position: absolute;
+    top: 21px;
+    right: 30px;
+    width: 30px;
+    height: 30px;
+}
+.products__card-title{
+    font-size: 1.5rem;
+    line-height: 120%;
+    margin-bottom: 5px;
+}
+.products__card-subtitle{
+    font-size: 1.25rem;
+    line-height: 120%;
+    font-weight: 500;
+    margin-bottom: 25px;
+}
+.products__card-footer{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+.products__card-footer span{
+    font-size: 1.5rem;
+    line-height: 1.2;
 }
